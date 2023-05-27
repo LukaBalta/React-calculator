@@ -1,0 +1,76 @@
+.pad_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+
+  button {
+    background-color: unset;
+    border: 1px solid rgba(200, 200, 200, 0.366);
+    box-shadow: 1px 1px 6px 1px rgba(165, 165, 165, 0.256);
+
+  }
+
+  button:hover {
+    background-color: rgba(195, 194, 194, 0.248);
+
+  }
+
+  button:active {
+    background-color: rgba(123, 123, 123, 0.248);
+
+  }
+
+
+  .coma {
+    display: flex;
+
+    .zarez {
+      display: grid;
+      grid-template-columns: repeat(1, 100px);
+      grid-template-rows: minmax(100px, auto) repeat(1, 0px);
+    }
+  }
+
+  .zero {
+
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: minmax(100px, auto) repeat(1, 0px);
+  }
+
+  .tool_top {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(1, 0px);
+
+    button {
+      background-color: rgb(172, 172, 172);
+    }
+
+    button:active {
+      background-color: rgb(114, 114, 114);
+    }
+  }
+
+  .tools_side {
+    max-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(1, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+
+    button {
+      background-color: rgb(255, 123, 0);
+    }
+
+    button:focus {
+      background-color: rgb(159, 77, 0);
+    }
+  }
+
+
+  .num_pad {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+  }
+}
