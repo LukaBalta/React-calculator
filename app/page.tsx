@@ -1,20 +1,23 @@
 'use client';
-import styles from '../styles/page.module.scss';
 import { useState } from 'react';
 import Screen from '../components/Screen';
+import ButtonPad from '@/components/ButtonPad';
+import styles from '../styles/page.module.scss'
+
 
 export default function Home() {
 
   const [value, setValue] = useState('')
 
   return (
-    <main className={styles.main}>
+    <div className={styles.main_wrapper}>
       <Screen
         onChange={(e: any) => {
           setValue(e.target.value)
         }}
         value={value}
       />
-    </main>
+      <ButtonPad />
+    </div>
   )
 }
